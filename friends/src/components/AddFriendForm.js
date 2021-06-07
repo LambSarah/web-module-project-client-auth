@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
+import UploadImages from './UploadImages'
 
 const emptyFormValues = {
     name: '',
     age: '',
-    email: ''
+    email: '',
+    nickname: ''
 }
 export default function AddFriendForm(props) {
     const [newFriend, setNewFriend] = useState(emptyFormValues)
@@ -57,9 +59,18 @@ export default function AddFriendForm(props) {
                 placeholder='Age'
                 onChange={handleChange}
             />
+            <label htmlFor='nickname'>Nickname: </label>
+            <input type='text'
+                name='nickname'
+                value={newFriend.nickname}
+                placeholder="'tiny'"
+                onChange={handleChange} />
+            <label htmlFor='image'>Image Upload: </label>
+            <input name='image' type='upload' />
+            <UploadImages />
             { error && <div>{error}</div>
             }
-            < button > Submit</button >
+            <button> Submit </button>
         </form >
     )
 }

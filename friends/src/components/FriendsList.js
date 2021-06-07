@@ -3,7 +3,8 @@ import AddFriendForm from './AddFriendForm'
 
 
 import { axiosWithAuth } from '../utils/axiosWithAuth'
-import Friend from './Friend'
+import FriendCard from './FriendCard'
+import Megrim from '../utils/fonts/Megrim-Regular.ttf'
 
 class FriendsList extends React.Component {
     state = {
@@ -42,13 +43,14 @@ class FriendsList extends React.Component {
                 <div className='cards-wrapper'>
                     {this.state.friendsList.map((friend) => {
                         return (
-                            <Friend friend={friend} key={friend.id} />
+                            <FriendCard friend={friend} key={friend.id} />
 
                         )
                     })}
                 </div>
             </div>
             <AddFriendForm friends={this.friendsList} getData={this.getData} />
+
         </>
         )
     }
