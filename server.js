@@ -13,37 +13,44 @@ let friends = [
     id: 1,
     name: 'Rachel Green',
     age: 30,
-    email: 'rachel@friends.com'
+    email: 'rachel@friends.com',
+    nickname: 'Snoopy',
+    image: '/home/thefemaledannyglover/Documents/LambdaProjects/Unit3/3.3.2ClientSideAuth/web-module-project-client-auth/friends/public/images/Snoopy.jpeg'
   },
   {
     id: 2,
     name: 'Joey Tribbiani',
     age: 34,
-    email: 'joey@friends.com'
+    email: 'joey@friends.com',
+    nickname: 'Big Guy'
   },
   {
     id: 3,
     name: 'Chandler Bing',
     age: 32,
-    email: 'chandler@friends.com'
+    email: 'chandler@friends.com',
+    nickname: 'The Chancellor'
   },
   {
     id: 4,
     name: 'Ross Geller',
     age: 32,
-    email: 'ross@friends.com'
+    email: 'ross@friends.com',
+    nickname: 'Tiny'
   },
   {
     id: 5,
     name: 'Monica Bing',
     age: 31,
-    email: 'monica@friends.com'
+    email: 'monica@friends.com',
+    nickname: 'Toot'
   },
   {
     id: 6,
     name: 'Phoebe Buffay-Hannigan',
     age: 30,
-    email: 'phoebe@friends.com'
+    email: 'phoebe@friends.com',
+    nickname: 'Legs'
   }
 ];
 
